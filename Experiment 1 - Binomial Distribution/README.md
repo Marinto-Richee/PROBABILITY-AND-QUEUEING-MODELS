@@ -30,7 +30,6 @@ The following are criteria for a frequency distribution to be a binomial distrib
 # Developed by
 # Register Number: 212220230031
 # Name: Marinto Richee J
-
 import numpy as np
 import math
 import scipy.stats
@@ -47,7 +46,7 @@ print("  X P(X=x) Obs.Fr  Ex.Fre   xi ")
 print("----------------------------------")
 for x in range(7):
     c=math.factorial(n)/(math.factorial(x)*math.factorial(n-x))
-    Pr.append(c*p*x*q*(n-x))
+    Pr.append(c*p**x*q**(n-x))
     E.append(Pr[x]*N)
     xi.append((f[x]-E[x])**2/E[x])
     print("%2.2f %2.2f  %4.2f   %3.2f  %3.2f"%(x,Pr[x],f[x],E[x],xi[x]))
@@ -63,5 +62,6 @@ else:
 ```
 
 # Results and Output : 
-![image](https://user-images.githubusercontent.com/65499285/166260834-486facd7-fa03-4e9c-8561-ede2f0c631c4.png)
+![image](https://user-images.githubusercontent.com/65499285/166266555-dbc81273-4c3b-42e1-83c5-6b7404d96b2c.png)
+
 <br>Hence, a program was implemented to fit a binomial distribution for the given frequency distribution
