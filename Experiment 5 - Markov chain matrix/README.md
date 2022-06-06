@@ -35,8 +35,7 @@ for i in range(1,n+1):
     print(P0,"\n\n")
 ```
 
-# Output: 
+# Result and Output: 
 ![image](https://user-images.githubusercontent.com/75234991/171336479-fe059e12-00bb-4e83-b15e-8e56c3474eea.png)
 
-# Result:
-Thus, the n-th step probability distribution matrix of the three state Markov chain was calculated.
+The n-th step probability distribution matrix of the three state Markov chain was calculated.
